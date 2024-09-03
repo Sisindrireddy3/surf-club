@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Navbar</title>
+    <style>
+        body {
+            background-color: #141717;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        .timeline-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .curve {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            background: none;
+            border: none;
+        }
+
+        .curve path {
+            stroke: #58635a;
+            stroke-width: 2px;
+            fill: none;
+        }
+
+        .timeline-item {
+            position: absolute;
+            transform: translateY(-50%);
+            text-align: left;
+        }
+
+        .timeline-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            color: #f0f0f0;
+        }
+
+        .timeline-item p {
+            margin: 0;
+            color: #b0b0b0;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #34b398;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Positioning text and dots */
+        .item-1 {
+            left: 10%;
+            top: 50%;
+        }
+
+        .dot-1 {
+            left: 10%;
+            top: 50%;
+        }
+
+        .item-2 {
+            right: 35%;
+            top: 30%;
+        }
+
+        .dot-2 {
+            right: 35%;
+            top: 30%;
+        }
+
+        .item-3 {
+            right: 10%;
+            top: 60%;
+        }
+
+        .dot-3 {
+            right: 10%;
+            top: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="timeline-container">
+        <svg class="curve" viewBox="0 0 1000 500">
+            <path d="M 0,400 C 250,100 750,100 1000,400"></path>
+        </svg>
+
+        <div class="timeline-item item-1">
+            <h2>Where it all starts on the West Coast</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <div class="dot dot-1"></div>
+        </div>
+
+        <div class="timeline-item item-2">
+            <h2>Waves everyday, everywhere</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <p>Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            <div class="dot dot-2"></div>
+        </div>
+
+        <div class="timeline-item item-3">
+            <h2>An institution since 1978</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <div class="dot dot-3"></div>
+        </div>
+    </div>
+</body>
+</html>
